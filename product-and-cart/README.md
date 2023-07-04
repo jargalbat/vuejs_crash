@@ -23,10 +23,13 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-
 ### CLI
 https://cli.vuejs.org/#getting-started
 ```
 vue create product-and-cart
 ```
+
+https://cli.vuejs.org/guide/css.html#referencing-assets
+
+
 
