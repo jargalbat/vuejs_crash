@@ -19,8 +19,33 @@
   </header>
 
   <router-view/>
+
+  <Sidebar
+    v-if="showSidebar"
+    :toggle="toggleSidebar"
+    :cart="cart"
+    :inventory="inventory"
+    :remove="removeItem"
+  />
 </template>
 
-<style scoped>
+<script setup>
+import Sidebar from '@/components/Sidebar.vue'
 
-</style>
+export default {
+  data () {
+    return {}
+  }
+}
+// import Sidebar from '@/components/Sidebar.vue'
+// import { defineComponent } from 'vue'
+//
+// export default defineComponent({
+//   data () {
+//     return {
+//       Sidebar
+//     }
+//   }
+// })
+
+</script>
