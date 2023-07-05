@@ -31,7 +31,7 @@
                 <div class="cell">
                   <label>Price:</label>
                 </div>
-                <div class="cell">${{ product.price.USD }}</div>
+<!--                <div class="cell">${{ product.price.USD }}</div>-->
               </div>
               <div class="row">
                 <div class="cell">
@@ -55,15 +55,8 @@
 </template>
 
 <script>
-import food from '../food.json'
-
 export default {
   name: 'HomeView',
-  data () {
-    return {
-      inventory: food
-    }
-  },
-  components: {}
+  props: ['inventory']
 }
 </script>
